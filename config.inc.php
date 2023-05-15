@@ -36,12 +36,14 @@ Typecho_Common::init();
 /** 定义数据库参数 */
 $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
-  'host' => '数据库地址',
-  'user' => '数据库用户',
-  'password' => '数据库密码',
+  'host' => 'aws.connect.psdb.cloud',
+  'user' => '3q9tynust6q2beqjvjg6',
+  'password' => 'pscale_pw_yyTsZvEomstiER4zsQC7vQipUMe0aelGnJYRfjSguhz',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => '数据库名',
+  'ssl-mode' => 'VERIFY_IDENTITY',
+  'ssl-ca' => '/etc/ssl/certs/ca-certificates.crt',
+  'database' => 'thomas',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
