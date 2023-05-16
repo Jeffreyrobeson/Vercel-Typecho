@@ -41,8 +41,6 @@ $db->addServer(array (
   'password' => 'pscale_pw_yyTsZvEomstiER4zsQC7vQipUMe0aelGnJYRfjSguhz',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'ssl-mode' => 'VERIFY_IDENTITY',
-  'ssl-ca' => '/etc/ssl/certs/ca-certificates.crt',
   'database' => 'thomas',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
